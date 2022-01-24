@@ -12,5 +12,6 @@
 | BartkoMilan	  | bartkom@kkszki.hu         |
 | Benke Balázs	| benkeb1@kkszki.hu         |
 | Boholy Balint	| boholyb14@gmail.com       |
-| davidfazekas	| fazekasd@kkszki.hu        |
+| davidfazekas	| davidfazekas756@gmail.com |
 | dav4eeed	    | dvpetrus@gmail.com        |
+| CsillikGergely|	gerison65@gmail.com       |
