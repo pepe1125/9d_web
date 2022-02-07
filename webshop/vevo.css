@@ -64,11 +64,12 @@ body{
     text-align: center;
     color: black;
 }
-.ajanlottposz .MaiPoster1{
+.ajanlottposz .vevokep{
     width: 370px;
     height: 550px;
     border: 1px solid black;
     border-radius: 3px;
+    float: left;
 }
 .ajanlottposz a{
     text-decoration: none;
@@ -84,4 +85,10 @@ body{
     border: 1px solid white;
     background-color: #333;
     color: white;
+}
+.kosarba, .kosar{
+    text-align: center;
+}
+.ar{
+    align-content: center;
 }
