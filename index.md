@@ -1,6 +1,6 @@
 # Ez itt a 9.D osztály [2. csoport] webshopja.
 
-WEBSHOP ("https://pepe1125.github.io/9d_web/webshop")
+[WEBSHOPHOZ UGRÁS!] (https://pepe1125.github.io/9d_web/webshop) 
 
 > A készítők:
 
