@@ -49,12 +49,12 @@ body{
 }
 .sendhelp{
     width: 90vw;
-    height: 80vw;
+    height: 120vw;
     background-color: rgb(179, 179, 179);
     margin: auto;
 }
 .ajanlottposz{
-    width: 60vw;
+    width: 80vw;
     height: 70vw;
     background-color: rgb(179, 179, 179);
     margin: auto;
@@ -74,8 +74,8 @@ body{
     transform: scale(1.1);
 }
 .ajanlottposz .breakingB{
-    width: 2%;
-    height: 3%;
+    width: 15vw;
+    height: 23vw;
     border: 1px solid black;
     border-radius: 3px;
     transition-duration: 0.4s;
@@ -84,8 +84,8 @@ body{
     transform: scale(1.1);
 }
 .ajanlottposz .HorrorPoster1{
-    width: 2%;
-    height: 3%;
+    width: 15vw;
+    height: 23vw;
     border: 1px solid black;
     border-radius: 3px;
     transition-duration: 0.4s;
@@ -94,8 +94,8 @@ body{
     transform: scale(1.1);
 }
 .ajanlottposz .ZyzzPoster1{
-    width: 2%;
-    height: 3%;
+    width: 15vw;
+    height: 23vw;
     border: 1px solid black;
     border-radius: 3px;
     transition-duration: 0.4s;
