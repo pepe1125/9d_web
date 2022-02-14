@@ -27,9 +27,8 @@ body{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 1vw 1vw;
     text-decoration: none;
-    transition-duration: 0.4s;
 }
 .navigacio a.kosar {
     float: right;
@@ -39,7 +38,7 @@ body{
     color: black;
 }
 .lentiresz {
-    padding: 2vw;
+    padding: 1vw;
     text-align: center;
     background-color: #333;
     color: white;
@@ -50,13 +49,13 @@ body{
 }
 .sendhelp{
     width: 90vw;
-    height: 70vw;
+    height: 120vw;
     background-color: rgb(179, 179, 179);
     margin: auto;
 }
 .ajanlottposz{
-    width: 60vw;
-    height: 15vw;
+    width: 80vw;
+    height: 70vw;
     background-color: rgb(179, 179, 179);
     margin: auto;
 }
@@ -64,34 +63,47 @@ body{
     text-align: center;
     color: black;
 }
-.ajanlottposz .vevokep{
-    width: 20vw;
-    height: 30vw;
+.ajanlottposz .MaiPoster1{
+    width: 15vw;
+    height: 23vw;
     border: 1px solid black;
     border-radius: 3px;
-    float: left;
+    transition-duration: 0.4s;
+}
+.ajanlottposz .MaiPoster1:hover{
+    transform: scale(1.1);
+}
+.ajanlottposz .breakingB{
+    width: 15vw;
+    height: 23vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+.ajanlottposz .breakingB:hover{
+    transform: scale(1.1);
+}
+.ajanlottposz .HorrorPoster1{
+    width: 15vw;
+    height: 23vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+.ajanlottposz .HorrorPoster1:hover{
+    transform: scale(1.1);
+}
+.ajanlottposz .ZyzzPoster1{
+    width: 15vw;
+    height: 23vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+.ajanlottposz .ZyzzPoster1:hover{
+    transform: scale(1.1);
 }
 .ajanlottposz a{
     text-decoration: none;
     color: black;
-}
-.ajanlottposz .kosarba{
-    font-size: xx-large;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-.kosarba:hover{
-    border-radius: 3px;
-    border: 1px solid white;
-    background-color: #333;
-    color: white;
-}
-.kosarba, .kosar{
-    text-align: center;
-}
-.ar{
-    align-content: center;
-}
-.meret{
-    wid;
 }
