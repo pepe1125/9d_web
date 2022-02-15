@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: rgb(223, 223, 223);
+}
+.nev{
+    padding: 1px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+.nev .logo{
+    width: 10vw;
+    height: 10vw;
+}
+.lentiresz {
+    padding: 0,2vw;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.lentiresz a{
+    text-decoration: none;
+    color: white;
+}
+.sendhelp{
+    width: 90vw;
+    height: 120vw;
+    background-color: rgb(179, 179, 179);
+    margin: auto;
+}
+
+.sendhelp .ajanlat{
+    text-align: center;
+    color: black;
+}
+
+.navbar-inverse{
+    background-color: #333;
+    border-color: transparent;
+    margin: auto;
+}
+.navbar{
+    border-radius: 0px;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+
+#output{
+    box-shadow:0 14px 20px 0 rgba(0, 0, 0, 0.479),0 10px 24px 0 rgba(0, 0, 0, 0.479);
+    width: 15vw;
+    height: 23vw;
+    border: solid black 1px;
+    border-radius: 3px;
+}
+
+.feltoltes{
+    text-align: center;
+}
