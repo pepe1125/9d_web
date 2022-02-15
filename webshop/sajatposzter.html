@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/katstyle.css">
+    <link rel="stylesheet" href="css/sajatposzter.css">
     <title>DatPlate</title>
 </head>
 <body>
@@ -48,30 +48,25 @@
     </div>
   </nav>
 
-    
-
-<!-- ajanlatok -->
+<!-- fos feltoltogenyo-->
     <div class="sendhelp">
+<div class="feltoltes">        
         <br>
-        <h1 class="ajanlat">Horror</h1>
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+        <h2><label for="file" style="cursor: pointer;">Töltsd ide a szarod</label></h2>
+        <h3>Ajánlott képméret: 1152px x 1766px</h3>
         <br>
-        <div class="ajanlottposz">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-            <img class="HorrorPoster1" src="poszterek/HorrorPoster1.png">
-        </div>
+        <p><img id="output" width="200"/></p>
+        
+        <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        </script>
+        
+        <br>
+</div>        
     </div>
 
 <!-- copyright aka lenti resz vagy mi nemtom -->
