@@ -47,8 +47,8 @@ body{
     color: black;
 }
 .sendhelp{
-    width: 1400px;
-    height: 700px;
+    width: 90vw;
+    height: 50vw;
     background-color: rgb(179, 179, 179);
     margin: auto;
 }
