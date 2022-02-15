@@ -50,7 +50,7 @@ body{
 }
 .sendhelp{
     width: 90vw;
-    height: 70vw;
+    height: 60vw;
     background-color: rgb(179, 179, 179);
     margin: auto;
 }
@@ -93,5 +93,7 @@ body{
     align-content: center;
 }
 .meret{
-    wid;
+    width: auto;
+    text-align: center;
+    font-size: x-large;
 }
