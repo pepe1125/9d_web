@@ -56,12 +56,41 @@ body{
 
 #output{
     box-shadow:0 14px 20px 0 rgba(0, 0, 0, 0.479),0 10px 24px 0 rgba(0, 0, 0, 0.479);
-    width: 15vw;
-    height: 23vw;
     border: solid black 1px;
     border-radius: 3px;
+    width: 40vw;
+    height: 49vw;
+    object-fit: cover;
 }
 
 .feltoltes{
+    text-align: center;
+}
+
+.ar{
+    align-content: center;
+}
+.meret{
+    width: auto;
+    text-align: center;
+    font-size: x-large;
+}
+
+.kosarba:hover{
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: #333;
+    color: white;
+}
+
+.kosarba{
+    font-size: xx-large;
+}
+
+.kosarba, .kosar{
+    text-align: center;
+}
+
+h3{
     text-align: center;
 }
