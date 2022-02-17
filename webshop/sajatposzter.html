@@ -52,9 +52,9 @@
     <div class="sendhelp">
 <div class="feltoltes">        
         <br>
-        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+        <p><input type="file"  accept="image/jpeg, image/png" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
         <h2><label for="file" style="cursor: pointer;">Töltsd ide a szarod</label></h2>
-        <h3>Ajánlott képméret: 1152px x 1766px</h3>
+        <h3>Ajánlott képméret: 1920px x 2688px</h3>
         <br>
         <p><img id="output" width="200"/></p>
         
@@ -66,8 +66,33 @@
         </script>
         
         <br>
-</div>        
-    </div>
+</div>
+
+<br>   
+        <div class="ajanlottposz"> 
+                <h2 class="ajanlat">
+                    Minőségi poszterek amik tökéletesen kiegészítik a szobád falát!
+                    <br>
+                    <br>
+                    Méretek:
+                    <br>
+                    <h3>XXL: 80x100</h3>
+                    <h3>XL: 60x80</h3>
+                    <h3>L: 40x60</h3>
+                </h2>
+                <div class="meret">
+                  <select name="meretek" id="meretdropdown">
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                  </select>
+                </div>
+                <br>
+                <div class="kosargomb">
+                  <p class="kosar"><button class="kosarba">Kosárba rakás</button></p>
+                </div>
+            </div>
+
 
 <!-- copyright aka lenti resz vagy mi nemtom -->
       <div class="lentiresz">
