@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+}
+
+.szurke{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-color: #333;
+	background-size: cover;
+}
+
+.datplate{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+}
+
+.datplate div{
+	float: left;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.datplate div span{
+	color: #ff771d !important;
+}
+
+.bejelentkezes{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.bejelentkezes input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+    margin-top: 10px;
+}
+
+.bejelentkezes input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.bejelentkezes input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.nsara{
+    text-decoration: none;
+    color: #c24e00;
+  }
+.lentiresz {
+    padding: 0,2vw;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.lentiresz a{
+    text-decoration: none;
+    color: white;
+}
+.reggomb{
+    color: rgb(194, 194, 194);
+}
