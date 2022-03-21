@@ -10,15 +10,31 @@
 </head>
 <body>
 
+    <script>
+        function bejel(){
+            if(user.value == localStorage.getItem("user")){
+                window.location = "https://pepe1125.github.io/9d_web/webshop/index.html"
+            }else if(pass1.value == localStorage.getItem("pass")){
+                window.location = "https://pepe1125.github.io/9d_web/webshop/index.html"
+            }else{
+                alert("\nNem létezik ilyen fiók! Ellenőrizd hogy jól írtad be az adatokat")
+            }
+            
+        }
+    </script>
+    
+
+
+
     <div class="szurke"></div>
 		<div class="datplate">
       <a href="https://pepe1125.github.io/9d_web/webshop/index.html"><div>Dat<span>Plate</span></a> </div>
 		</div>
 		<br>
 		<div class="bejelentkezes">
-				<input type="email" placeholder="E-mail" name="user"><br>
-				<input type="password" placeholder="Jelszó" name="password"><br>
-				<input type="button" value="Bejelentkezés">
+				<input type="email" placeholder="E-mail" id="user"><br>
+				<input type="password" placeholder="Jelszó" id="pass1"><br>
+				<input type="button" onclick="bejel()" value="Bejelentkezés">
                 <p>Nincs még fiókod? <a class="nsara" href="regisztracio.html">Csinálj egyet!</a></p>
 		</div>
 
@@ -29,3 +45,4 @@
 
 </body>
 </html>
+
