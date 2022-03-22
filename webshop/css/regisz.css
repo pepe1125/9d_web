@@ -78,7 +78,7 @@ body{
 	margin-top: 10px;
 }
 
-.bejelentkezes input[type=button]{
+.bejelentkezes input[type=submit]{
 	width: 260px;
 	height: 35px;
 	background: #fff;
@@ -116,4 +116,7 @@ a{
 }
 .reggomb{
     color: rgb(194, 194, 194);
+}
+#sikeres{
+	color: lime;
 }

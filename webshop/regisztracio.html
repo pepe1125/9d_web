@@ -15,10 +15,15 @@
 
                 if (pass1.value != pass2.value) {
                     alert("\nA jelszó nem egyezik: Kérlek próbáld újra...")
+                } else if(pass1.value = ' '){
+                    alert("\nKérlek adj meg egy jelszót!")
+                } else if(pass2.value = ' '){
+                    alert("\nKérlek erősítsd meg a jelszavadat!")
                 }
                 else{
                     localStorage.setItem("user" , user.value)
                     localStorage.setItem("pass" , pass1.value)
+                    document.getElementById("sikeres").innerHTML = "Sikeresen regisztráltál! Most már be tudsz jelentkezni :)"
                 }
                     
         }
@@ -27,15 +32,16 @@
 
     <div class="szurke"></div>
 		<div class="datplate">
-      <a href="https://pepe1125.github.io/9d_web/webshop/index.html"><div>Dat<span>Plate</span></a> </div>
-      <span id="sikeres"></span>
+      <a href="index.html"><div>Dat<span>Plate</span></a> </div>
 		</div>
+        
 		<br>
 		<div class="bejelentkezes">
+                <span id="sikeres"></span>
 				<input type="email" placeholder="E-mail" id="user"><br>
 				<input type="password" placeholder="Jelszó" id="pass1"><br>
                 <input type="password" placeholder="Jelszó mégegyszer" id="pass2"><br>
-				<input type="button" onclick="register()" value="Regisztráció*">
+				<input type="submit" onclick="register()" value="Regisztráció*">
                 <p>Van már fiókod? <a class="nsara" href="bejelentkezes.html">Jelentkezz be!</a></p>
                 <p class="reggomb">*A Regisztráció gombra kattintva elfogadod az <a class="nsara" href="#">Általános Szerződési Feltételeket</a></p>
 		</div>
