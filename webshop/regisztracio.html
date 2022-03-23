@@ -13,12 +13,26 @@
     <script>
         function register(){
 
-                if (pass1.value != pass2.value) {
-                    alert("\nA jelszó nem egyezik: Kérlek próbáld újra...")
+                if(user.value == ''){
+                    document.getElementById("sikeres").style.color = "red";
+                    document.getElementById("sikeres").innerHTML = "Kérlek adj meg egy email címet!"
                 }
+                else if(pass1.value == ''){
+                    document.getElementById("sikeres").style.color = "red";
+                    document.getElementById("sikeres").innerHTML = "Kérlek adj meg egy jelszót!"
+                } 
+                else if(pass2.value == ''){
+                    document.getElementById("sikeres").style.color = "red";
+                    document.getElementById("sikeres").innerHTML = "Kérlek erősítsd meg a jelszavad!"
+                }
+                else if (pass1.value != pass2.value) {
+                    document.getElementById("sikeres").style.color = "red";
+                    document.getElementById("sikeres").innerHTML = "A jelszó nem egyezik: Kérlek próbáld újra..."
+                } 
                 else{
                     localStorage.setItem("user" , user.value)
                     localStorage.setItem("pass" , pass1.value)
+                    document.getElementById("sikeres").style.color = "lime";
                     document.getElementById("sikeres").innerHTML = "Sikeresen regisztráltál! Most már be tudsz jelentkezni :)"
                 }
                     
