@@ -20,9 +20,9 @@
 
 <script>
     function checklogin(){
-        if (localStorage.getItem("user") === null) {
+        if (localStorage.getItem("savelogin") === null) {
             document.getElementById("bejelent").innerHTML = " Bejelentkezés"
-        } else if(localStorage.getItem("user") == localStorage.getItem("user")){
+        } else if(localStorage.getItem("savelogin") == "true"){
             document.getElementById("bejelent").innerHTML = " Kosár"
         }}
 </script>
@@ -53,7 +53,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="rolunk.html"><span class="glyphicon glyphicon-user"></span> Rólunk</a></li>
-          <li><a id="bejelent" href="bejelentkezes.html"><span class="glyphicon glyphicon-log-in"></span> Bejelentkezés</a></li>
+          <li><a id="bejelent" href="check.html"><span class="glyphicon glyphicon-log-in"></span> Bejelentkezés</a></li>
         </ul>
       </div>
     </div>
@@ -65,25 +65,25 @@
         <h1 class="ajanlat">Legtöbbet eladott</h1>
         <br>
         <div class="ajanlottposz">
-            <h2>Anime <a href="anime.html"><i class="fas fa-chevron-right"></i></a></h2>
+            <h2 class="kategorianevek">Anime <a href="anime.html"><i class="fas fa-chevron-right"></i></a></h2>
             <a href="mai.html"><img class="MaiPoster1" src="poszterek/Anime/MaiPoster1.png"></a>
             <a href="onepiece.html"><img class="MaiPoster1" src="poszterek/Anime/OnePiece1.jpg"></a>
             <a href="evangelion.html"><img class="MaiPoster1" src="poszterek/Anime/evangelion.png"></a>
             <a href="zerotwo.html"><img class="MaiPoster1" src="poszterek/Anime/ZeroTwoPoster1.png"></a>
             <a href="mai.html"><img class="MaiPoster1" src="poszterek/Anime/dragonballsuperposter.png"></a>
-            <h2>Sorozat <a href="sorozat.html"><i class="fas fa-chevron-right"></i></a></h2>
+            <h2 class="kategorianevek">Sorozat <a href="sorozat.html"><i class="fas fa-chevron-right"></i></a></h2>
             <img class="breakingB" src="poszterek/Sorozat/breakingB.png">
             <img class="breakingB" src="poszterek/Sorozat/cobra_kai.jpg">
             <img class="breakingB" src="poszterek/Sorozat/outer_banks.png">
             <img class="breakingB" src="poszterek/Sorozat/Outer_Banks.jpg">
             <img class="breakingB" src="poszterek/Sorozat/breakingB.png">
-            <h2>Horror <a href="horror.html"><i class="fas fa-chevron-right"></i></a></h2>
+            <h2 class="kategorianevek">Horror <a href="horror.html"><i class="fas fa-chevron-right"></i></a></h2>
             <a href="meth.html"><img class="HorrorPoster1" src="poszterek/Horror/HorrorPoster1.png"></a>
             <a href="meth.html"><img class="HorrorPoster1" src="poszterek/Horror/HorrorPoster1.png"></a>
             <a href="meth.html"><img class="HorrorPoster1" src="poszterek/Horror/HorrorPoster1.png"></a>
             <a href="meth.html"><img class="HorrorPoster1" src="poszterek/Horror/HorrorPoster1.png"></a>
             <a href="meth.html"><img class="HorrorPoster1" src="poszterek/Horror/HorrorPoster1.png"></a>
-            <h2>Meme <a href="meme.html"><i class="fas fa-chevron-right"></i></a></h2>
+            <h2 class="kategorianevek">Meme <a href="meme.html"><i class="fas fa-chevron-right"></i></a></h2>
             <img class="ZyzzPoster1" src="poszterek/Meme/ZyzzPoster1.png">
             <img class="ZyzzPoster1" src="poszterek/Meme/254779783_3131849503763318_6634397064335448475_n.png">
             <img class="ZyzzPoster1" src="poszterek/Meme/kunumariesz.png">
