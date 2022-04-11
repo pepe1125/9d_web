@@ -9,9 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/vevo.css">
+    <script src="js/kosarba.js"></script>
+    <script src="js/checklogin.js"></script>
     <title>DatPlate</title>
 </head>
-<body>
+<body onload="checklogin()">
 <!-- itt van a nev meg ize ja ennyi -->
 <div class="nev">
     <a href="index.html"><img class="logo" src="logo_2.png"></a>
@@ -21,35 +23,35 @@
 
 <!-- fenti navigacio ize resz -->
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">KOLLEKCIÓK <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="anime.html">Anime</a></li>
-              <li><a href="meme.html">Meme</a></li>
-              <li><a href="sorozat.html">Sorozat</a></li>
-              <li><a href="horror.html">Horror</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Limitált Kiadások</a></li>
-          <li><a href="sajatposzter.html">Tervezd meg a saját posztered</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="rolunk.html"><span class="glyphicon glyphicon-user"></span> Rólunk</a></li>
-          <li><a href="bejelentkezes.html"><span class="glyphicon glyphicon-log-in"></span> Bejelentkezés</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">KOLLEKCIÓK <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="meme.html">Meme</a></li>
+            <li><a href="sorozat.html">Sorozat</a></li>
+            <li><a href="horror.html">Horror</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Limitált Kiadások</a></li>
+        <li><a href="sajatposzter.html">Tervezd meg a saját posztered</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="rolunk.html"><span class="glyphicon glyphicon-user"></span> Rólunk</a></li>
+        <li><a id="bejelent" href="check.html"><span class="glyphicon glyphicon-log-in"></span> Bejelentkezés</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     
 
@@ -62,8 +64,9 @@
         <div class="ajanlottposz"> 
             <img class="vevokep" src="poszterek/Anime/MaiPoster1.png">
             <div class="kosargomb">
-                <h1 class="ajanlat">15.000Ft</h1>
-                <p class="kosar"><button class="kosarba">Kosárba rakás</button></p>
+                <h1 class="ajanlat">15.000Ft</h1><br>
+                <input type="number" id="darabszam"><br>
+                <p class="kosar"><button class="btn btn-primary shop-item-button" type="button">Kosárba rakás</button></p>
                 <h2 class="ajanlat">
                     Minőségi poszterek amik tökéletesen kiegészítik a szobád falát!
                     <br>
@@ -76,11 +79,7 @@
                     <br>
                     L: 40x60
                 </h2>
-                <div class="meret">
-                    <input type='radio' name='meret'> XXL
-                    <input type='radio' name='meret'> XL
-                    <input type='radio' name='meret'> L
-                </div>
+
                 </div>
             </div>
         </div>
