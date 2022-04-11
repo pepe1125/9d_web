@@ -6,6 +6,9 @@ body{
     margin: 0;
     background-color: rgb(223, 223, 223);
 }
+html {
+    scroll-behavior: smooth;
+  }
 .nev{
     padding: 1px;
     text-align: center;
@@ -93,4 +96,156 @@ body{
 
 h3{
     text-align: center;
+}
+.cartrs {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-item-image {
+    display: none;
+}
+
+.cart-row {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cart-header {
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cart-item {
+    width: 45%;
+    text-align: center;
+}
+
+.cart-price {
+    width: 20%;
+    color: black;
+    text-align: center;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: black;
+    margin-left: .5em;
+    text-align: center;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.cart-total {
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cart-total-price {
+    color: black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.section-header {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #dec79b;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: rgb(185, 0, 0);
+    border: none;
+    border-radius: 0.3em;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: rgb(243, 0, 0);
+}
+
+.btn-purchase {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.75em;
+}
+
+.btn-primary {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    cursor: pointer;
 }
