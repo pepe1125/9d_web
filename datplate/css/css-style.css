@@ -1,0 +1,260 @@
+body {
+    background-color: rgb(14, 14, 14);
+    margin: 0 !important;
+    font-family: 'Inter', sans-serif !important;
+    
+}
+
+html {
+    scroll-behavior: smooth !important;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-mid {
+    background-color: rgb(8, 8, 8) !important;
+}
+
+.nav-full{
+    background-color: rgb(8, 8, 8) !important;
+}
+
+.navbar-nav a {
+    color: white !important;
+    font-weight: 600;
+}
+
+.nav-logo {
+    max-width: 150px;
+}
+
+.nav-dc-btn {
+    background-image: linear-gradient(to right, #FF00CC , #7214FE) !important;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.navbar-text a {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.89) !important;
+    transition: 0.5s;
+}
+
+.col-md-6 {
+    color: white !important;
+}
+
+.logo-png {
+    max-width: 300px;
+}
+
+.prices-bar {
+    background-color: rgb(8, 8, 8) !;
+}
+
+.kartya-hatter {
+    background-color: rgb(8, 8, 8);
+    color: white !important;
+    border: none;
+}
+
+.card {
+    border: none;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, #FF00CC , #7214FE) !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to right, #ff3bd8 , #8534ff) !important;
+}
+
+
+.kartya-1 {
+    border: 2px solid #FF00CC !important;
+}
+.kartya-2 {
+    border: 2px solid #D606DB !important;
+}
+.kartya-3 {
+    border: 2px solid #AF0BE8 !important;
+}
+.kartya-4 {
+    border: 2px solid #7813FC !important;
+}
+
+.kartya-szoveg {
+    font-weight: 600;
+}
+
+.features {
+    color: rgba(240, 248, 255, 0.712);
+}
+
+@keyframes ipshine {
+    0% {
+        color: #FF00CC;
+    }
+
+    50% {
+        color: #7813FC;
+    }
+
+    100% {
+        color: #FF00CC;
+    }
+}
+
+.list-unstyled li {
+    font-size: 0.9rem;
+}
+.card-header {
+    background-color: rgba(0, 0, 0, 0.993);
+}
+.card-header h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.pr-list li a {
+    color: rgba(255, 255, 255, 0.767) !important;
+    text-decoration: none !important;
+}
+
+.pr-list li a:hover {
+    color: rgba(255, 255, 255, 0.876) !important;
+    text-decoration: none !important;
+}
+
+.l-prr {
+    color: rgb(218, 218, 218) !important; 
+}
+.footer-lg {
+    max-width: 150px;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e611 !important;
+  }
+
+  .ftr-1 {
+      background-color: #080808;
+      color: white;
+      border-radius: 5px;
+  }
+
+  .ftr-2 {
+    background-color: #080808;
+    color: white;
+    border-radius: 5px;
+}
+
+
+  .a {
+    padding: 50px;
+}
+
+.brdr1 {
+    border: 2px solid #ff00cc50 !important;
+}
+
+.brdr2 {
+    border: 2px solid #c613fc50 !important;
+}
+
+.brdr3 {
+    border: 2px solid #c613fc50 !important;
+    
+}
+
+.brdr4 {
+    border: 2px solid #ff00cc50 !important;
+}
+
+.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+
+  @media only screen and (max-width: 1200px) {
+    .home-lp {
+      margin-top: 80px !important;
+    }
+
+    .logo-png {
+        max-width: 250px !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .home-lp {
+      margin-top: 30px !important;
+    }
+
+    .logo-png {
+        max-width: 200px !important;
+        margin-top: 30px;
+    }
+  }
+
+  .ftr-1:hover {
+      transition: 0.2s;
+      transform: scale(1.01) !important;
+      cursor: pointer !important;
+  }
+
+  .card-header button {
+      color: white !important;
+      font-weight: 600;
+  }
+
+  .btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+ .card-header {
+     border-bottom: solid 2px #0E0E0E !important;
+ }
+
+ ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+  #progressBarContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  
+  #progressBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, purple, violet);
+    height: 0;
+    opacity: 0;
+  }
+  #user, #pass1, #pass2{
+      background-color: #080808;
+      border: 1px white solid;
+      border-radius: 5px;
+      color: white;
+  }
