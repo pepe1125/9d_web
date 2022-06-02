@@ -1,60 +1,184 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/css-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="js/js-embed.js"></script>
-    <meta name="theme-color" content="#D009F1">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <script src="js/6a41bf085c.js" crossorigin="anonymous"></script>
-    <script src="js/dist-jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="js/js-bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <title>DatPlate</title>
-     <script>
-         function bejel(){
-          if(document.getElementById("check").checked == true){
-            localStorage.setItem("savelogin", "true")
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/css-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="js/js-embed.js"></script>
+  <meta name="theme-color" content="#D009F1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <script src="js/6a41bf085c.js" crossorigin="anonymous"></script>
+  <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="js/dist-jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/js-bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <title>DatPlate</title>
+
+</head>
+
+
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+  }
+
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+  }
+
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
+
+</head>
+
+<body class="text-center">
+
+  <main class="form-signin w-100 m-auto">
+    <img class="mb-4" src="images/css-logo.png" alt="" width="100" height="100">
+    <h1 class="h3 mb-3 fw-normal">Bejelentkezés</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="user" placeholder="SPalegjobb@kando.hu">
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="pass1" placeholder="*******">
+      <label for="floatingPassword">Jelszó</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me" id="check"> Emlékezz rám
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="bejel()">Bejelentkezés</button>
+    <p class="mt-5 mb-3 text-muted">Nincs fiókod? <a href="regisztracio.html">Regisztrálj itt</a></p>
+    <span id="sikeres"></span>
+    <p class="mt-5 mb-3 text-muted">&copy; DatPlate</p>
+  </main>
+
+  <script>
+    function bejel() {
+      // ha nem egyezik az email akkor
+      if (user.value != sessionStorage.getItem("user")) {
+        document.getElementById("sikeres").style.color = "red";
+        document.getElementById("sikeres").innerHTML = "Nem találtunk ilyen bejelentkezési adatokat, kérlek próbáld újra"
+     // ha megis egyezik es keri az elmentest akkor
+      } else if (user.value == sessionStorage.getItem("user")) {
+        if (pass1.value == sessionStorage.getItem("pass1")) {
+          if (document.getElementById("check").checked = true) {
             localStorage.setItem("logged", "true")
-            if(user.value == sessionStorage.getItem("user")){
-              if(pass1.value == sessionStorage.getItem("pass")){
-              window.location = "index.html"
+            localStorage.setItem("savelogin", "true")
+            document.getElementById("sikeres").style.color = "lime";
+            document.getElementById("sikeres").innerHTML = "Sikeres bejelentkezés! :)"
+            window.location = "index.html"
+      // ha egyezik de nem ker mentest
+          } else {
+            if (user.value == sessionStorage.getItem("user")) {
+              if (pass1.value == sessionStorage.getItem("pass1")) {
+                if (document.getElementById("check").checked = false) {
+                  document.getElementById("sikeres").style.color = "lime";
+                  document.getElementById("sikeres").innerHTML = "Sikeres bejelentkezés! :)"
+                  window.location = "index.html"
+                }
               }
             }
           }
-            else if(user.value == sessionStorage.getItem("user")){
-              if(pass1.value == sessionStorage.getItem("pass")){
-                sessionStorage.setItem("logged", "true")
-              window.location = "index.html"
-            }else{
-                alert("nemjoxd")
-            }
-          }
         }
-     </script>
-</head>
-<body>
-    
-    <div class="container-fluid" style="background-color: rgb(14, 14, 14);">
-        <br><br><h1 id="ajanlat" class="text-center" style="font-weight: 600; color: white;">Bejelentkezés</h1><br>
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-5">
-                <div class="col-md-5 mt-2 ftr-1 brdr1 m-2 pl-2">
-                    <p class="p-3 mb-0" style="font-weight: 500; font-size: 15px; color: azure;">Email:  <input type="text" id="user"></p> 
-                    <p class="p-3 mb-0" style="font-weight: 500; font-size: 15px; color: azure;">Jelszó:  <input type="password" id="pass1"></p>
-                    <input type="checkbox" name="emlekezz" id="check">
-                </div>
-            </div>
-        </div>
-        <button type="button" style="width: 10%; margin: auto;" class="btn btn-lg btn-block btn-primary bejelentgomb" onclick="bejel()">Bejelentkezés</button>
-        <a href="regisztracio.html">regisztralj itt xd</a>
-    </div>
-    
+      }
+    }
+  </script>
 
-
-</body>
 </html>
